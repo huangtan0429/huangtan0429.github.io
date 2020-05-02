@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Tan&#39;s Website</title>
+  
+  <subtitle>For the midterm of PythonAA</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://huangtan0429.github.io/"/>
+  <updated>2020-05-02T16:00:20.393Z</updated>
+  <id>https://huangtan0429.github.io/</id>
+  
+  <author>
+    <name>Tan Huang</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[Hexo] Post A New Post</title>
+    <link href="https://huangtan0429.github.io/2020/05/02/Hexo-Post-A-New-Post/"/>
+    <id>https://huangtan0429.github.io/2020/05/02/Hexo-Post-A-New-Post/</id>
+    <published>2020-05-02T15:59:00.000Z</published>
+    <updated>2020-05-02T16:00:20.393Z</updated>
+    
+    <content type="html"><![CDATA[<p>This article is about how to post a new post on Hexo page.</p><hr><ol><li>Input<code>hexo s</code> in Terminal which should at the root folder of website to run a server.</li><li>Open the url <code>http://localhost:4000/</code> and add the text <code>admin</code> behind it to enter the admin page.<br><img src="https://i.imgur.com/Xh96T3r.png" alt=""></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;This article is about how to post a new post on Hexo page.&lt;/p&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;Input&lt;code&gt;hexo s&lt;/code&gt; in Terminal which should at the roo
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Hexo" scheme="https://huangtan0429.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[Hexo] Build A Website by GitHub Pages and Hexo</title>
+    <link href="https://huangtan0429.github.io/2020/05/02/Build-A-Website-by-GitHub-Pages-and-Hexo/"/>
+    <id>https://huangtan0429.github.io/2020/05/02/Build-A-Website-by-GitHub-Pages-and-Hexo/</id>
+    <published>2020-05-02T15:41:00.000Z</published>
+    <updated>2020-05-02T16:00:31.723Z</updated>
+    
+    <content type="html"><![CDATA[<p>Here’s few steps to help you to build your own website by GitHub Pages and Hexo.</p><hr><ol><li>First, create a new repository on GitHub and name it as “<em>username</em>.github.io”.<br>The user name should be your own one.<br><img src="https://i.imgur.com/yK7rkhn.png" alt=""></li><li>Set a theme at the bottom of the setting.<br><img src="https://i.imgur.com/OA8BnYv.jpg" alt=""></li><li>Download and install Node.js and Git (by Homebrew).<br><img src="https://i.imgur.com/kyYXTUS.png" alt=""><br><img src="https://i.imgur.com/l2aQHqS.png" alt=""><br><img src="https://i.imgur.com/ncCc85o.png" alt=""></li><li>In terminal, type <code>npm install -g hexo-cli</code> to install Hexo<br> <strong>(Note: Before this step you should switch to root/Administrator first)</strong><br><img src="https://i.imgur.com/8IlcCkj.png" alt=""></li><li>Create a folder by <code>hexo init &lt;folder name&gt;</code>, then cd to it.<br><img src="https://i.imgur.com/pR48hqj.png" alt=""></li><li>Input <code>npm install</code> to install Hexo and <code>npm install hexo-deployer-git --save</code> for other component.<br><img src="https://i.imgur.com/G3CeiS7.png" alt=""></li><li>And here is the folder.<br><img src="https://i.imgur.com/tfqLG81.png" alt=""></li><li>Open the <code>_config.yml</code>. Edit the listing text.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#Site</span><br><span class="line">title:</span><br><span class="line">subtitle:</span><br><span class="line">description:</span><br><span class="line">keywords:</span><br><span class="line">author:</span><br><span class="line">language:</span><br><span class="line">timezone:        &#x2F;&#x2F;keep empty for using the system time</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#Url</span><br><span class="line">url:            &#x2F;&#x2F;the url like &lt;username&gt;.github.io</span><br></pre></td></tr></table></figure><img src="https://i.imgur.com/YWjKAiC.png" alt=""></li><li>At the bottom of <code>_config.yml</code>, add the text as below.</li></ol><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#Deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/&lt;username&gt;/&lt;repository</span> <span class="string">name&gt;.git/</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br><span class="line">  </span><br><span class="line"><span class="string">//in</span> <span class="string">&lt;username&gt;</span> <span class="string">and</span> <span class="string">&lt;repository</span> <span class="string">name&gt;</span> <span class="string">you</span> <span class="string">should</span> <span class="string">fill</span> <span class="string">with</span> <span class="string">your</span> <span class="string">own</span> <span class="string">one.</span></span><br></pre></td></tr></table></figure><p>Then, enter listing command below in Terminal.</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo cl    //clear</span><br><span class="line">hexo g     //generate</span><br><span class="line">hexo d     //deploy</span><br></pre></td></tr></table></figure><h6 id="Notes"><a href="#Notes" class="headerlink" title="Notes:"></a>Notes:</h6><ul><li>Before the clear step I met a problem as below. I found that the <code>description</code> in the <code>_config.yml</code>, the <code>&#39;</code> of <code>where&#39;s</code> make it unacceptable.<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">FATAL can not read a block mapping entry; a multiline key may not be an implicit key at line 9, column 9:</span><br><span class="line">    keywords: </span><br><span class="line">            ^</span><br></pre></td></tr></table></figure></li><li>Before the deploy step, it show a <strong>ERROR</strong> as below, which I need to enter <code>$ npm install hexo-deployer-git --save</code> again when the Terminal is in the website folder. Then, login with the GitHub account.<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ERROR Deployer not found: git</span><br></pre></td></tr></table></figure></li></ul><p>Now the website is ready.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Here’s few steps to help you to build your own website by GitHub Pages and Hexo.&lt;/p&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;First, create a new repository on GitH
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Hexo" scheme="https://huangtan0429.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+</feed>
